@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="1-add test data to table 'users'"
+               author="Grigorovich">
+        <sql>
+            insert into users (user_full_name, user_surname, user_patronymic, user_email)
+            values ('Александр', 'Григорович', 'Васильевич', 'algrigr@gmail.com'),
+                   ('Вадим', 'Селицкий', 'Владиславович', 'selitsckiy@mail.ru'),
+                   ('Максим', 'Солодкий', 'Андреевич', 'MaxPrivate00@gmail.com');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <!--tables-->
+    <include file="db/changelog/version-1.0.0/2023-03-25-app_test-users.xml"/>
+
+    <!--test data -->
+    <include file="test-data-app_test-user.xml"/>
+
+</databaseChangeLog>
