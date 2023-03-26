@@ -15,7 +15,8 @@
                 user_full_name  varchar(20) not null,
                 user_surname    varchar(40) not null,
                 user_patronymic varchar(40) not null,
-                user_email      varchar(40) not null,
+                user_email      varchar(50) not null,
+                user_role       varchar(100) not null,
                 primary key (user_id)
             );
         </sql>

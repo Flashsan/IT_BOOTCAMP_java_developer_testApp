@@ -9,10 +9,11 @@
     <changeSet id="1-add test data to table 'users'"
                author="Grigorovich">
         <sql>
-            insert into users (user_full_name, user_surname, user_patronymic, user_email)
-            values ('Александр', 'Григорович', 'Васильевич', 'algrigr@gmail.com'),
-                   ('Вадим', 'Селицкий', 'Владиславович', 'selitsckiy@mail.ru'),
-                   ('Максим', 'Солодкий', 'Андреевич', 'MaxPrivate00@gmail.com');
+            insert into users (user_full_name, user_surname, user_patronymic, user_email, user_role)
+            values ('Александр', 'Григорович', 'Васильевич', 'algrigr@gmail.com', 'ADMINISTRATOR'),
+                   ('Вадим', 'Селицкий', 'Владиславович', 'selitsckiy@mail.ru', 'SALE_USER'),
+                   ('Максим', 'Солодкий', 'Андреевич', 'MaxPrivate00@gmail.com', 'CUSTOMER');
+                   ('Леонид', 'Петрович', 'Кирасов', 'kirasov54@gmail.com', 'SECURE_API_USER');
         </sql>
     </changeSet>
 </databaseChangeLog>

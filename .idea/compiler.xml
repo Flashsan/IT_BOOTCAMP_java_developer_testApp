@@ -6,18 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="controller" />
+        <module name="service" />
         <module name="entity" />
-        <module name="IT_BOOTCAMP_java_developer_testApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="controller" target="11" />
       <module name="entity" target="11" />
       <module name="IT_BOOTCAMP_java_developer_testApp" target="11" />
+      <module name="service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="controller" options="-parameters" />
       <module name="entity" options="-parameters" />
+      <module name="service" options="-parameters" />
     </option>
   </component>
 </project>
